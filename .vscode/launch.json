@@ -1,0 +1,51 @@
+{
+	"version": "0.2.0",
+	"configurations":
+	[
+		{
+			"name": "Debug",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"args":
+			[
+				"coleco",
+				"-cart",
+				"${workspaceFolder}\\Test.col",
+				"-debug",
+				"-rewind"
+			],
+			"program": "${workspaceFolder}/../../mame/mame.exe",
+			"cwd": "${workspaceFolder}/../../mame"
+		},
+		{
+			"name": "Run",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"args":
+			[
+				"coleco",
+				"-cart",
+				"${workspaceFolder}\\Test.col",
+				"-window"
+			],
+			"program": "${workspaceFolder}/../../mame/mame.exe",
+			"cwd": "${workspaceFolder}/../../mame"
+		},
+		{
+			"name": "Run with SGM",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"args":
+			[
+				"coleco",
+				"-exp",
+				"sgm",
+				"-cart",
+				"${workspaceFolder}\\Test.col",
+				"-window"
+			],
+			"program": "${workspaceFolder}/../../mame/mame.exe",
+			"cwd": "${workspaceFolder}/../../mame"
+		}
+	]
+}
