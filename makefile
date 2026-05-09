@@ -37,6 +37,7 @@ SystemC_S	+= $(wildcard System/C/*.s)
 
 SharedC_S	= SystemLib/Z80/Decompression/IO/C/BitBusterDepackIRQ.s
 SharedC_S	+= $(wildcard SystemLib/$(console)/C/*.s)
+SharedC_S	+= $(wildcard SystemLib/$(console)/Bank/C/*.s)
 SharedC_S	+= $(wildcard SystemLib/Z80/Graphics/IO/C/*.s)
 SharedC_S	+= $(wildcard SystemLib/Z80/Graphics/Sprites/C/*.s)
 SharedC_S	+= $(wildcard SystemLib/Z80/Shared/C/*.s)
@@ -47,6 +48,7 @@ SystemZ_S	+= $(wildcard System/Z/*.s)
 
 SharedZ_S	= SystemLib/Z80/Decompression/IO/Z/BitBusterDepackIRQ.s
 SharedZ_S	+= $(wildcard SystemLib/$(console)/Z/*.s)
+SharedZ_S	+= $(wildcard SystemLib/$(console)/Bank/Z/*.s)
 SharedZ_S	+= $(wildcard SystemLib/Z80/Graphics/IO/Z/*.s)
 SharedZ_S	+= $(wildcard SystemLib/Z80/Graphics/Sprites/Z/*.s)
 SharedZ_S	+= $(wildcard SystemLib/Z80/Shared/Z/*.s)

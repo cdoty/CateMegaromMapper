@@ -8,6 +8,7 @@ ext	enableExpandedRAM
 ext setMode2
 ext	clearVRAM
 ext	callBankFunction_
+ext	setupBanking
 
 startup: public startup
 	ld		sp, StackStart			; Setup stack
@@ -15,8 +16,7 @@ startup: public startup
 	call	resetSound				; Reset sound to stop noise at startup
 	call	clearRam				; Clear ram
 	call	setupLibrary			; Setup library
-	
-	; Removed extra ram check.
+	call	setupBanking			; Setup banking
 
 	call	setMode2				; Set mode 2
 	call	clearVRAM				; Clear VRAM
